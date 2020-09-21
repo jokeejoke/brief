@@ -227,3 +227,48 @@ p.message{
   margin-bottom: 80px;
   cursor: pointer;
 }
+.submit_btn:focus,
+.submit_btn:active{
+  outline: none;
+}
+.modal_window_wrapper{
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,.5);
+  z-index: 99;
+}
+.modal_window{
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 15px 15px 50px 15px;
+  text-align: center;
+  transition: all .5s ease;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.modal_window .title{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.modal_window .ok{
+  border: none;
+  max-width: 100px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #d90a2c;
+  color: #ffffff;
+}
+.modal_window .ok:focus,
+.modal_window .ok:active{
+  outline: none;
+}

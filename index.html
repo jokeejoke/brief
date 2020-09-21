@@ -85,11 +85,11 @@
         <label class="brief_question__title">Логотип</label>
         <div class="inputs_list">
           <label for="development" class="checkbox_item">
-            <input type="radio" name="logo" id="development">
+            <input type="radio" name="logo" id="development" value="Разработка логотипа">
             <span class="checkbox_item__title">Разработка логотипа</span>
           </label>
           <label for="redesign" class="checkbox_item">
-            <input type="radio" name="logo" id="redesign">
+            <input type="radio" name="logo" id="redesign" value="Редизайн логотипа">
             <span class="checkbox_item__title">Редизайн логотипа</span>
           </label>
           <input type="text" name="target_of_redesign" class="w-100" placeholder="Причина и цель редизайна">
@@ -112,19 +112,20 @@
         <label class="brief_question__title">Структура логотипа</label>
         <div class="inputs_list">
           <label for="brand" class="checkbox_item">
-            <input type="radio" name="logo_structure" id="brand">
+            <input type="radio" name="logo_structure" id="brand" value="Фирменное написание">
             <span class="checkbox_item__title">Фирменное написание</span>
           </label>
           <label for="element" class="checkbox_item">
-            <input type="radio" name="logo_structure" id="element">
+            <input type="radio" name="logo_structure" id="element" value="Графический элемент">
             <span class="checkbox_item__title">Графический элемент</span>
           </label>
           <label for="brand_element" class="checkbox_item">
-            <input type="radio" name="logo_structure" id="brand_element">
+            <input type="radio" name="logo_structure" id="brand_element"
+              value="Графический элемент + фирменное написание">
             <span class="checkbox_item__title">Графический элемент + фирменное написание</span>
           </label>
           <label for="discretion" class="checkbox_item">
-            <input type="radio" name="logo_structure" id="discretion">
+            <input type="radio" name="logo_structure" id="discretion" value="На усмотрение дизайнера">
             <span class="checkbox_item__title">На усмотрение дизайнера</span>
           </label>
         </div>
@@ -141,19 +142,19 @@
         <label class="brief_question__title">Тип подачи информации</label>
         <div class="inputs_list">
           <label for="simplicity" class="checkbox_item">
-            <input type="radio" name="info_type" id="simplicity">
+            <input type="radio" name="info_type" id="simplicity" value="Простота, лаконичность">
             <span class="checkbox_item__title">Простота, лаконичность</span>
           </label>
           <label for="illustration" class="checkbox_item">
-            <input type="radio" name="info_type" id="illustration">
+            <input type="radio" name="info_type" id="illustration" value="Уклон в иллюстрацию">
             <span class="checkbox_item__title">Уклон в иллюстрацию</span>
           </label>
           <label for="abstraction" class="checkbox_item">
-            <input type="radio" name="info_type" id="abstraction">
+            <input type="radio" name="info_type" id="abstraction" value="Абстракция">
             <span class="checkbox_item__title">Абстракция</span>
           </label>
           <label for="engraving" class="checkbox_item">
-            <input type="radio" name="info_type" id="engraving">
+            <input type="radio" name="info_type" id="engraving" value="Гравюра, геральдика">
             <span class="checkbox_item__title">Гравюра, геральдика</span>
           </label>
           <textarea name="wishes_for_style" placeholder="Ваши личные пожелания &#10; к стилистике"></textarea>
@@ -189,7 +190,7 @@
           <input type="text" name="link1" class="w-100" placeholder="Ссылка">
           <textarea name="like1" placeholder="Что именно Вам&#10;понравилось?"></textarea>
           <input type="text" name="link2" class="w-100" placeholder="Ссылка">
-          <textarea name="like1" placeholder="Что именно Вам&#10;понравилось?"></textarea>
+          <textarea name="like2" placeholder="Что именно Вам&#10;понравилось?"></textarea>
         </div>
       </div>
       <div class="brief_question">
@@ -197,9 +198,9 @@
           стилей</label>
         <div class="inputs_list">
           <input type="text" name="link3" class="w-100" placeholder="Ссылка">
-          <textarea name="dislike1" placeholder="Что именно Вам&#10;понравилось?"></textarea>
+          <textarea name="dislike1" placeholder="Что именно Вам&#10;не понравилось?"></textarea>
           <input type="text" name="link4" class="w-100" placeholder="Ссылка">
-          <textarea name="dislike2" placeholder="Что именно Вам&#10;понравилось?"></textarea>
+          <textarea name="dislike2" placeholder="Что именно Вам&#10;не понравилось?"></textarea>
         </div>
       </div>
       <div class="brief_question">
@@ -207,28 +208,28 @@
         <span class="red_note">Базовые носители</span>
         <div class="inputs_list">
           <label for="card" class="checkbox_item">
-            <input type="radio" name="card" id="card">
+            <input type="radio" name="card" id="card" value="Визитка">
             <span class="checkbox_item__title">Визитка</span>
           </label>
           <label for="Folder" class="checkbox_item">
-            <input type="radio" name="Folder" id="Folder">
+            <input type="radio" name="Folder" id="Folder" value="Папка">
             <span class="checkbox_item__title">Папка</span>
           </label>
           <label for="Letterhead" class="checkbox_item">
-            <input type="radio" name="Letterhead" id="Letterhead">
+            <input type="radio" name="Letterhead" id="Letterhead" value="Бланк">
             <span class="checkbox_item__title">Бланк</span>
           </label>
           <label for="Envelope" class="checkbox_item">
-            <input type="radio" name="Envelope" id="Envelope">
+            <input type="radio" name="Envelope" id="Envelope" value="Конверт">
             <span class="checkbox_item__title">Конверт</span>
           </label>
           <label for="guideline" class="checkbox_item">
-            <input type="radio" name="guideline" id="guideline">
+            <input type="radio" name="guideline" id="guideline" value="Брендбук / Гайдлайн">
             <span class="checkbox_item__title">Брендбук / Гайдлайн</span>
           </label>
           <textarea name="something_own" class="p-30" placeholder="Укажите что-нибудь &#10;свое"></textarea>
           <label for="consultation" class="checkbox_item consultation">
-            <input type="radio" name="consultation" id="consultation">
+            <input type="radio" name="consultation" id="consultation" value="Да">
             <span class="checkbox_item__title red">Нужна консультация</span>
           </label>
         </div>
@@ -239,23 +240,23 @@
         <span class="note mb">Если нет, то пропустите данный пункт</span>
         <div class="inputs_list">
           <label for="Banner" class="checkbox_item">
-            <input type="radio" name="Banner" id="Banner">
+            <input type="radio" name="Banner" id="Banner" value="Баннер">
             <span class="checkbox_item__title">Баннер</span>
           </label>
           <label for="Leaflet" class="checkbox_item">
-            <input type="radio" name="Leaflet" id="Leaflet">
+            <input type="radio" name="Leaflet" id="Leaflet" value="Листовка">
             <span class="checkbox_item__title">Листовка</span>
           </label>
           <label for="Billboard" class="checkbox_item">
-            <input type="radio" name="Billboard" id="Billboard">
+            <input type="radio" name="Billboard" id="Billboard" value="Рекламный щит">
             <span class="checkbox_item__title">Рекламный щит</span>
           </label>
           <label for="Poster" class="checkbox_item">
-            <input type="radio" name="Poster" id="Poster">
+            <input type="radio" name="Poster" id="Poster" value="Постер">
             <span class="checkbox_item__title">Постер</span>
           </label>
           <label for="advertising" class="checkbox_item">
-            <input type="radio" name="advertising" id="advertising">
+            <input type="radio" name="advertising" id="advertising" value="Онлайн реклама">
             <span class="checkbox_item__title">Онлайн реклама</span>
           </label>
           <textarea name="something_own2" class="p-30" placeholder="Укажите что-нибудь &#10;свое"></textarea>
@@ -266,11 +267,11 @@
         <label class="brief_question__title">Требуется ли разработка упаковки?</label>
         <div class="inputs_list">
           <label for="packaging_development_yes" class="checkbox_item">
-            <input type="radio" name="packaging_design" id="packaging_development_yes">
+            <input type="radio" name="packaging_design" id="packaging_development_yes" value="Да">
             <span class="checkbox_item__title">Да</span>
           </label>
           <label for="packaging_development_no" class="checkbox_item">
-            <input type="radio" name="packaging_design" id="packaging_development_no">
+            <input type="radio" name="packaging_design" id="packaging_development_no" value="Нет">
             <span class="checkbox_item__title">Нет</span>
           </label>
         </div>
@@ -279,11 +280,11 @@
         <label class="brief_question__title">Требуется ли дизайн сайта или лендинга?</label>
         <div class="inputs_list">
           <label for="site_yes" class="checkbox_item">
-            <input type="radio" name="site_design" id="site_yes">
+            <input type="radio" name="site_design" id="site_yes" value="Да">
             <span class="checkbox_item__title">Да</span>
           </label>
           <label for="site_no" class="checkbox_item">
-            <input type="radio" name="site_design" id="site_no">
+            <input type="radio" name="site_design" id="site_no" value="Нет">
             <span class="checkbox_item__title">Нет</span>
           </label>
         </div>
@@ -306,19 +307,19 @@
         <label class="brief_question__title">Бюджет</label>
         <div class="inputs_list">
           <label for="one_two" class="checkbox_item">
-            <input type="radio" name="budget" id="one_two" value="">
+            <input type="radio" name="budget" id="one_two" value="1-2$">
             <span class="checkbox_item__title">1-2$</span>
           </label>
           <label for="two_three" class="checkbox_item">
-            <input type="radio" name="budget" id="two_three" value="">
+            <input type="radio" name="budget" id="two_three" value="2-3$">
             <span class="checkbox_item__title">2-3$</span>
           </label>
           <label for="three_four" class="checkbox_item">
-            <input type="radio" name="budget" id="three_four" value="">
+            <input type="radio" name="budget" id="three_four" value="3-4$">
             <span class="checkbox_item__title">3-4$</span>
           </label>
           <label for="over_four" class="checkbox_item">
-            <input type="radio" name="budget" id="over_four" value="">
+            <input type="radio" name="budget" id="over_four" value="Свыше 4$">
             <span class="checkbox_item__title">Свыше 4$</span>
           </label>
         </div>
@@ -331,6 +332,15 @@
       <button type="submit" class="submit_btn">Отправить</button>
     </form>
 
+  </div>
+
+  <div class="modal_window_wrapper">
+    <div class="modal_window">
+      <h4 class="title">
+        Спасибо за Ваши ответы!
+      </h4>
+      <button type="button" class="ok">OK</button>
+    </div>
   </div>
 
 

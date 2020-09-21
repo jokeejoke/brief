@@ -1,8 +1,20 @@
 $(function () {
 
-  let $textarea = $('textarea');
-  setInterval(function () {
-    $textarea.get(0).style.setProperty("--line-height", $textarea.height() + 'px');
-  }, 100);
+  //E-mail Ajax Send
+  $("form.brief_form").submit(function () { //Change
+    var th = $(this);
+    $.ajax({
+      type: "POST",
+      url: "mail.php", //Change
+      data: th.serialize()
+    }).done(function () {
+      alert("success");
+      setTimeout(function () {
+        // Done Functions
+        th.trigger("reset");
+      }, 1000);
+    });
+    return false;
+  });
 
 })

@@ -13,18 +13,25 @@
 <body>
 
   <div class="brief_wrapper">
-    <form action="">
+    <form class="brief_form">
+
+      <!-- Hidden Required Fields -->
+      <input type="hidden" name="project_name" value="Site Name">
+      <input type="hidden" name="admin_email" value="admin@mail.com">
+      <input type="hidden" name="form_subject" value="Form Subject">
+      <!-- END Hidden Required Fields -->
+
       <h4 class="title">
         Информация о компании
       </h4>
       <div class="brief_question">
         <label for="company_name" class="brief_question__title">Название компании</label>
         <div class="inputs_list">
-          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Например : SoundForge">
+          <input type="text" name="CompanyName" class="w-100" placeholder="Например : SoundForge">
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Контактная информация</label>
+        <label class="brief_question__title">Контактная информация</label>
         <div class="inputs_list">
           <input type="text" name="email" class="w-46" placeholder="E-mail">
           <input type="text" name="whatsapp" class="w-46" placeholder="WhatsApp">
@@ -33,41 +40,41 @@
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Род деятельности компании</label>
+        <label class="brief_question__title">Род деятельности компании</label>
         <div class="inputs_list">
-          <input type="text" id="company_name" name="company_name" class="w-100"
-            placeholder="Например : Создание музыки">
+          <input type="text" name="business_line_of_the_company" class="w-100" placeholder="Например : Создание музыки">
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Описание продуктов или услуг</label>
+        <label class="brief_question__title">Описание продуктов или услуг</label>
         <div class="inputs_list">
-          <textarea name="" id=""
+          <textarea name="description"
             placeholder="Например : Занимаемся созданием кинематографической музыки для фильмов и рекламных роликов"></textarea>
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Целевая аудитория</label>
+        <label class="brief_question__title">Целевая аудитория</label>
         <div class="inputs_list left">
           <input type="text" name="Geography" class="w-100" placeholder="География">
           <input type="text" name="men" class="w-30" placeholder="Мужчины %">
           <input type="text" name="women" class="w-30 ml-10" placeholder="Женщины %">
           <input type="text" name="age" class="w-62" placeholder="Возраст">
           <input type="text" name="earnings" class="w-62" placeholder="Доход">
-          <textarea name="" id="" placeholder="Образ жизни &#10;/ психологический портрет"></textarea>
+          <textarea name="lifestyle_psychological_portrait"
+            placeholder="Образ жизни &#10;/ психологический портрет"></textarea>
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Назовите близжайших конкурентов</label>
+        <label class="brief_question__title">Назовите близжайших конкурентов</label>
         <div class="inputs_list">
           <input type="text" name="competitor1" class="w-46" placeholder="Конкурент 1">
           <input type="text" name="competitor2" class="w-46" placeholder="Конкурент 2">
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Описание продуктов или услуг</label>
+        <label class="brief_question__title">Ваши основные конкурентные преимущества</label>
         <div class="inputs_list">
-          <textarea name="" id="" class="pb-70"
+          <textarea name="advantages" class="pb-70"
             placeholder="Например : Команда состоит из профессиональных композиторов со стажем работы от 8 лет / сотрудничество с известными кинокомпаниями"></textarea>
         </div>
       </div>
@@ -78,55 +85,54 @@
         <label class="brief_question__title">Логотип</label>
         <div class="inputs_list">
           <label for="development" class="checkbox_item">
-            <input type="radio" name="logo" id="development" value="">
+            <input type="radio" name="logo" id="development">
             <span class="checkbox_item__title">Разработка логотипа</span>
           </label>
           <label for="redesign" class="checkbox_item">
-            <input type="radio" name="logo" id="redesign" value="">
+            <input type="radio" name="logo" id="redesign">
             <span class="checkbox_item__title">Редизайн логотипа</span>
           </label>
-          <input type="text" name="competitor1" class="w-100" placeholder="Reason and purpose of the redesign">
+          <input type="text" name="target_of_redesign" class="w-100" placeholder="Причина и цель редизайна">
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Название, которое должно быть отображено в
+        <label class="brief_question__title">Название, которое должно быть отображено в
           логотипе</label>
         <div class="inputs_list">
-          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Например : SoundForce">
+          <input type="text" name="logo_name" class="w-100" placeholder="Например : SoundForce">
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Приписка к логотипу (дискриптор)</label>
+        <label class="brief_question__title">Приписка к логотипу (дискриптор)</label>
         <div class="inputs_list">
-          <input type="text" id="company_name" name="company_name" class="w-100"
-            placeholder="Например: Music of your life">
+          <input type="text" name="logo_descriptor" class="w-100" placeholder="Например: Music of your life">
         </div>
       </div>
       <div class="brief_question">
         <label class="brief_question__title">Структура логотипа</label>
         <div class="inputs_list">
           <label for="brand" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="brand" value="">
+            <input type="radio" name="logo_structure" id="brand">
             <span class="checkbox_item__title">Фирменное написание</span>
           </label>
           <label for="element" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="element" value="">
+            <input type="radio" name="logo_structure" id="element">
             <span class="checkbox_item__title">Графический элемент</span>
           </label>
           <label for="brand_element" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="brand_element" value="">
+            <input type="radio" name="logo_structure" id="brand_element">
             <span class="checkbox_item__title">Графический элемент + фирменное написание</span>
           </label>
           <label for="discretion" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="discretion" value="">
+            <input type="radio" name="logo_structure" id="discretion">
             <span class="checkbox_item__title">На усмотрение дизайнера</span>
           </label>
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Графический элемент</label>
+        <label class="brief_question__title">Графический элемент</label>
         <div class="inputs_list">
-          <textarea name="" id=""
+          <textarea name="wishes_for_graphic_element"
             placeholder="Напишите пожелания по графическому элементу | Перечислите образы, которые могут быть использованы"></textarea>
         </div>
         <span class="note">Или напишите - "На усмотрение дизайнера"</span>
@@ -135,65 +141,65 @@
         <label class="brief_question__title">Тип подачи информации</label>
         <div class="inputs_list">
           <label for="simplicity" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="simplicity" value="">
+            <input type="radio" name="info_type" id="simplicity">
             <span class="checkbox_item__title">Простота, лаконичность</span>
           </label>
           <label for="illustration" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="illustration" value="">
+            <input type="radio" name="info_type" id="illustration">
             <span class="checkbox_item__title">Уклон в иллюстрацию</span>
           </label>
           <label for="abstraction" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="abstraction" value="">
+            <input type="radio" name="info_type" id="abstraction">
             <span class="checkbox_item__title">Абстракция</span>
           </label>
           <label for="engraving" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="engraving" value="">
+            <input type="radio" name="info_type" id="engraving">
             <span class="checkbox_item__title">Гравюра, геральдика</span>
           </label>
-          <textarea name="" id="" placeholder="Ваши личные пожелания &#10; к стилистике"></textarea>
+          <textarea name="wishes_for_style" placeholder="Ваши личные пожелания &#10; к стилистике"></textarea>
         </div>
         <span class="note">Или напишите - "На усмотрение дизайнера"</span>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Какой имидж компании создать с помощью логотипа /
+        <label class="brief_question__title">Какой имидж компании создать с помощью логотипа /
           фирменного стиля:</label>
         <div class="inputs_list">
-          <textarea name="" id=""
+          <textarea name="company_image"
             placeholder="Например: сила, стабильность, &#10;современность, новаторство и т. д."></textarea>
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Цветовая гамма</label>
+        <label class="brief_question__title">Цветовая гамма</label>
         <div class="inputs_list">
-          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Например : черный, белый">
+          <input type="text" name="color_shame" class="w-100" placeholder="Например : черный, белый">
         </div>
         <span class="note">Или напишите - "На усмотрение дизайнера"</span>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Если бы дизайн был музыкальным жанром, то каким
+        <label class="brief_question__title">Если бы дизайн был музыкальным жанром, то каким
           именно?</label>
         <div class="inputs_list">
-          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Например : рок">
+          <input type="text" name="genre_of_music" class="w-100" placeholder="Например : рок">
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Укажите примеры понравившихся логотипов или фирменных
+        <label class="brief_question__title">Укажите примеры понравившихся логотипов или фирменных
           стилей</label>
         <div class="inputs_list">
-          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Ссылка">
-          <textarea name="" id="" placeholder="Что именно Вам&#10;понравилось?"></textarea>
-          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Ссылка">
-          <textarea name="" id="" placeholder="Что именно Вам&#10;понравилось?"></textarea>
+          <input type="text" name="link1" class="w-100" placeholder="Ссылка">
+          <textarea name="like1" placeholder="Что именно Вам&#10;понравилось?"></textarea>
+          <input type="text" name="link2" class="w-100" placeholder="Ссылка">
+          <textarea name="like1" placeholder="Что именно Вам&#10;понравилось?"></textarea>
         </div>
       </div>
       <div class="brief_question">
-        <label for="company_name" class="brief_question__title">Укажите примеры непонравившихся логотипов или фирменных
+        <label class="brief_question__title">Укажите примеры непонравившихся логотипов или фирменных
           стилей</label>
         <div class="inputs_list">
-          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Ссылка">
-          <textarea name="" id="" placeholder="Что именно Вам&#10;понравилось?"></textarea>
-          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Ссылка">
-          <textarea name="" id="" placeholder="Что именно Вам&#10;понравилось?"></textarea>
+          <input type="text" name="link3" class="w-100" placeholder="Ссылка">
+          <textarea name="dislike1" placeholder="Что именно Вам&#10;понравилось?"></textarea>
+          <input type="text" name="link4" class="w-100" placeholder="Ссылка">
+          <textarea name="dislike2" placeholder="Что именно Вам&#10;понравилось?"></textarea>
         </div>
       </div>
       <div class="brief_question">
@@ -201,28 +207,28 @@
         <span class="red_note">Базовые носители</span>
         <div class="inputs_list">
           <label for="card" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="card" value="">
+            <input type="radio" name="card" id="card">
             <span class="checkbox_item__title">Визитка</span>
           </label>
           <label for="Folder" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="Folder" value="">
+            <input type="radio" name="Folder" id="Folder">
             <span class="checkbox_item__title">Папка</span>
           </label>
           <label for="Letterhead" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="Letterhead" value="">
+            <input type="radio" name="Letterhead" id="Letterhead">
             <span class="checkbox_item__title">Бланк</span>
           </label>
           <label for="Envelope" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="Envelope" value="">
+            <input type="radio" name="Envelope" id="Envelope">
             <span class="checkbox_item__title">Конверт</span>
           </label>
           <label for="guideline" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="guideline" value="">
+            <input type="radio" name="guideline" id="guideline">
             <span class="checkbox_item__title">Брендбук / Гайдлайн</span>
           </label>
-          <textarea name="" id="" class="p-30" placeholder="Укажите что-нибудь &#10;свое"></textarea>
+          <textarea name="something_own" class="p-30" placeholder="Укажите что-нибудь &#10;свое"></textarea>
           <label for="consultation" class="checkbox_item consultation">
-            <input type="radio" name="consultation" id="consultation" value="">
+            <input type="radio" name="consultation" id="consultation">
             <span class="checkbox_item__title red">Нужна консультация</span>
           </label>
         </div>
@@ -233,26 +239,26 @@
         <span class="note mb">Если нет, то пропустите данный пункт</span>
         <div class="inputs_list">
           <label for="Banner" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="Banner" value="">
+            <input type="radio" name="Banner" id="Banner">
             <span class="checkbox_item__title">Баннер</span>
           </label>
           <label for="Leaflet" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="Leaflet" value="">
+            <input type="radio" name="Leaflet" id="Leaflet">
             <span class="checkbox_item__title">Листовка</span>
           </label>
           <label for="Billboard" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="Billboard" value="">
+            <input type="radio" name="Billboard" id="Billboard">
             <span class="checkbox_item__title">Рекламный щит</span>
           </label>
           <label for="Poster" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="Poster" value="">
+            <input type="radio" name="Poster" id="Poster">
             <span class="checkbox_item__title">Постер</span>
           </label>
           <label for="advertising" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="advertising" value="">
+            <input type="radio" name="advertising" id="advertising">
             <span class="checkbox_item__title">Онлайн реклама</span>
           </label>
-          <textarea name="" id="" class="p-30" placeholder="Укажите что-нибудь &#10;свое"></textarea>
+          <textarea name="something_own2" class="p-30" placeholder="Укажите что-нибудь &#10;свое"></textarea>
         </div>
       </div>
 
@@ -260,11 +266,11 @@
         <label class="brief_question__title">Требуется ли разработка упаковки?</label>
         <div class="inputs_list">
           <label for="packaging_development_yes" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="packaging_development_yes" value="">
+            <input type="radio" name="packaging_design" id="packaging_development_yes">
             <span class="checkbox_item__title">Да</span>
           </label>
           <label for="packaging_development_no" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="packaging_development_no" value="">
+            <input type="radio" name="packaging_design" id="packaging_development_no">
             <span class="checkbox_item__title">Нет</span>
           </label>
         </div>
@@ -273,11 +279,11 @@
         <label class="brief_question__title">Требуется ли дизайн сайта или лендинга?</label>
         <div class="inputs_list">
           <label for="site_yes" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="site_yes" value="">
+            <input type="radio" name="site_design" id="site_yes">
             <span class="checkbox_item__title">Да</span>
           </label>
           <label for="site_no" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="site_no" value="">
+            <input type="radio" name="site_design" id="site_no">
             <span class="checkbox_item__title">Нет</span>
           </label>
         </div>
@@ -285,7 +291,7 @@
       <div class="brief_question">
         <label class="brief_question__title">Укажите, для чего ещё нужно сделать дизайн</label>
         <div class="inputs_list">
-          <textarea name="" id=""
+          <textarea name="more_about_design"
             placeholder="Например : оформление социальных сетей, стикеры, ценники, мерч, и т.д."></textarea>
         </div>
       </div>
@@ -293,26 +299,26 @@
       <div class="brief_question">
         <label class="brief_question__title">Укажите другие ваши пожелания, или то, что нам следует знать</label>
         <div class="inputs_list">
-          <textarea name="" id="" placeholder="Ваши пожелания, &#10;или другая информация"></textarea>
+          <textarea name="client_wishes" placeholder="Ваши пожелания, &#10;или другая информация"></textarea>
         </div>
       </div>
       <div class="brief_question">
         <label class="brief_question__title">Бюджет</label>
         <div class="inputs_list">
           <label for="one_two" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="one_two" value="">
+            <input type="radio" name="budget" id="one_two" value="">
             <span class="checkbox_item__title">1-2$</span>
           </label>
           <label for="two_three" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="two_three" value="">
+            <input type="radio" name="budget" id="two_three" value="">
             <span class="checkbox_item__title">2-3$</span>
           </label>
           <label for="three_four" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="three_four" value="">
+            <input type="radio" name="budget" id="three_four" value="">
             <span class="checkbox_item__title">3-4$</span>
           </label>
           <label for="over_four" class="checkbox_item">
-            <input type="radio" name="structure_logo" id="over_four" value="">
+            <input type="radio" name="budget" id="over_four" value="">
             <span class="checkbox_item__title">Свыше 4$</span>
           </label>
         </div>

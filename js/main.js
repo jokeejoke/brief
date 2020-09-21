@@ -25,4 +25,17 @@ $(function () {
     $(".modal_window_wrapper").css("top", "-100%");
   });
 
+  $("label.checkbox_item").click(function (e) {
+    e.preventDefault();
+    $check = $(this).find("input");
+    if ($check.prop('checked'))
+      $check.prop("checked", false);
+    else
+      $check.prop("checked", true);
+
+    //console.log($check.prop("checked"));
+  });
+
+
+
 })

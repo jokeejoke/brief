@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  font-size: 16px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  color: #5c5a5c;
+}
+.brief_wrapper{
+  position: relative;
+  max-width: 590px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.title{
+  position: relative;
+  color: #d90a2c;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.55;
+  letter-spacing: 0.5px;
+  margin: 80px 0 100px 0;
+  padding: 0;
+  text-align: center;
+}
+.title.technical{
+  margin-bottom: 80px;
+}
+.title:after{
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 100px;
+  height: 2px;
+  background-color: #363536;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.brief_question{
+  position: relative;
+  margin-top: 45px;
+}
+.brief_question__title{
+  position: relative;
+  display: block;
+  color: #363536;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.inputs_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.inputs_list.left{
+  justify-content: flex-start;
+}
+input[type="text"]{
+  font-family: 'Montserrat',Arial,sans-serif;
+  border-radius: 50px;
+  background-color: #f2f2f2;
+  border-color: transparent;
+  border-style: solid;
+  height: 42px;
+  margin-top: 15px;
+  color: #363536;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+  padding-left: 25px;
+}
+input[type="text"]:active,
+input[type="text"]:focus{
+  outline: none;
+}
+input.w-100{
+  flex: 0 0 100%;
+}
+input.w-46{
+  flex: 0 0 46%;
+}
+input.w-62{
+  flex: 0 0 62%;
+}
+input.w-30{
+  min-width: 126px;
+  flex: 0 0 30%;
+}
+textarea{
+  display: block;
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  border-color: transparent;
+  border-style: solid;
+  resize: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font-size: 15px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 1.55;
+  padding: 55px 15px;
+}
+textarea:focus,
+textarea:active{
+  outline: none;
+}
+textarea.p-30{
+  padding: 30px 15px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+.checkbox_item{
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.checkbox_item__title{
+  color: #5c5a5c;
+  font-size: 16px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  padding-left: 38px;
+  position: relative;
+}
+.checkbox_item__title.red{
+  color: #d90a2c;
+}
+.checkbox_item__title:after{
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+input[type="radio"]{
+  display: none;
+}
+.checkbox_item input[type="radio"]:checked + .checkbox_item__title:after{
+  background-color: #d90a2c;
+}
+.note{
+  font-size: 13px;
+  color: #5c5a5c;
+  font-weight: 400;
+  line-height: 1.55;
+  display: block;
+  margin-top: 10px;
+}
+.note.mb{
+  margin-bottom: 5px;
+}
+.red_note{
+  color: #d90a2c;
+  font-size: 16px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  display: block;
+  margin: 15px 0 10px;
+}
+.red_line{
+  width: 110px;
+  height: 2px;
+  margin: 50px 0;
+  background-color: #d90a2c;
+}
+.red_line.mb{
+  margin: 50px 0 30px 0;
+}
+p.message{
+  color: #5c5a5c;
+  font-size: 13px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  max-width: 502px;
+}
+.submit_btn{
+  background-color: #d90a2c;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Montserrat',Arial,sans-serif;
+  line-height: 1.55;
+  font-weight: 700;
+  height: 42px;
+  padding: 0 40px;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  cursor: pointer;
+}

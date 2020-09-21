@@ -5,14 +5,332 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brief</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-  <p>
-    Start Template for Brief on Git
-  </p>
+  <div class="brief_wrapper">
+    <form action="">
+      <h4 class="title">
+        Информация о компании
+      </h4>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Название компании</label>
+        <div class="inputs_list">
+          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Например : SoundForge">
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Контактная информация</label>
+        <div class="inputs_list">
+          <input type="text" name="email" class="w-46" placeholder="E-mail">
+          <input type="text" name="whatsapp" class="w-46" placeholder="WhatsApp">
+          <input type="text" name="telegram" class="w-46" placeholder="Telegram">
+          <input type="text" name="instagram" class="w-46" placeholder="Instagram">
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Род деятельности компании</label>
+        <div class="inputs_list">
+          <input type="text" id="company_name" name="company_name" class="w-100"
+            placeholder="Например : Создание музыки">
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Описание продуктов или услуг</label>
+        <div class="inputs_list">
+          <textarea name="" id=""
+            placeholder="Например : Занимаемся созданием кинематографической музыки для фильмов и рекламных роликов"></textarea>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Целевая аудитория</label>
+        <div class="inputs_list left">
+          <input type="text" name="Geography" class="w-100" placeholder="География">
+          <input type="text" name="men" class="w-30" placeholder="Мужчины %">
+          <input type="text" name="women" class="w-30 ml-10" placeholder="Женщины %">
+          <input type="text" name="age" class="w-62" placeholder="Возраст">
+          <input type="text" name="earnings" class="w-62" placeholder="Доход">
+          <textarea name="" id="" placeholder="Образ жизни / психологический портрет"></textarea>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Назовите близжайших конкурентов</label>
+        <div class="inputs_list">
+          <input type="text" name="competitor1" class="w-46" placeholder="Конкурент 1">
+          <input type="text" name="competitor2" class="w-46" placeholder="Конкурент 2">
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Описание продуктов или услуг</label>
+        <div class="inputs_list">
+          <textarea name="" id=""
+            placeholder="Например : Команда состоит из профессиональных композиторов со стажем работы от 8 лет / сотрудничество с известными кинокомпаниями"></textarea>
+        </div>
+      </div>
+      <h4 class="title technical">
+        Техническое задание
+      </h4>
+      <div class="brief_question">
+        <label class="brief_question__title">Логотип</label>
+        <div class="inputs_list">
+          <label for="development" class="checkbox_item">
+            <input type="radio" name="logo" id="development" value="">
+            <span class="checkbox_item__title">Разработка логотипа</span>
+          </label>
+          <label for="redesign" class="checkbox_item">
+            <input type="radio" name="logo" id="redesign" value="">
+            <span class="checkbox_item__title">Редизайн логотипа</span>
+          </label>
+          <input type="text" name="competitor1" class="w-100" placeholder="Reason and purpose of the redesign">
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Название, которое должно быть отображено в
+          логотипе</label>
+        <div class="inputs_list">
+          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Например : SoundForce">
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Приписка к логотипу (дискриптор)</label>
+        <div class="inputs_list">
+          <input type="text" id="company_name" name="company_name" class="w-100"
+            placeholder="Например: Music of your life">
+        </div>
+      </div>
+      <div class="brief_question">
+        <label class="brief_question__title">Структура логотипа</label>
+        <div class="inputs_list">
+          <label for="brand" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="brand" value="">
+            <span class="checkbox_item__title">Фирменное написание</span>
+          </label>
+          <label for="element" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="element" value="">
+            <span class="checkbox_item__title">Графический элемент</span>
+          </label>
+          <label for="brand_element" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="brand_element" value="">
+            <span class="checkbox_item__title">Графический элемент + фирменное написание</span>
+          </label>
+          <label for="discretion" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="discretion" value="">
+            <span class="checkbox_item__title">На усмотрение дизайнера</span>
+          </label>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Графический элемент</label>
+        <div class="inputs_list">
+          <textarea name="" id=""
+            placeholder="Напишите пожелания по графическому элементу | Перечислите образы, которые могут быть использованы"></textarea>
+        </div>
+        <span class="note">Или напишите - "На усмотрение дизайнера"</span>
+      </div>
+      <div class="brief_question">
+        <label class="brief_question__title">Тип подачи информации</label>
+        <div class="inputs_list">
+          <label for="simplicity" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="simplicity" value="">
+            <span class="checkbox_item__title">Простота, лаконичность</span>
+          </label>
+          <label for="illustration" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="illustration" value="">
+            <span class="checkbox_item__title">Уклон в иллюстрацию</span>
+          </label>
+          <label for="abstraction" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="abstraction" value="">
+            <span class="checkbox_item__title">Абстракция</span>
+          </label>
+          <label for="engraving" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="engraving" value="">
+            <span class="checkbox_item__title">Гравюра, геральдика</span>
+          </label>
+          <textarea name="" id="" placeholder="Ваши личные пожелания к стилистике"></textarea>
+        </div>
+        <span class="note">Или напишите - "На усмотрение дизайнера"</span>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Какой имидж компании создать с помощью логотипа /
+          фирменного стиля:</label>
+        <div class="inputs_list">
+          <textarea name="" id=""
+            placeholder="Например: сила, стабильность, современность, новаторство и т. д."></textarea>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Цветовая гамма</label>
+        <div class="inputs_list">
+          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Например : черный, белый">
+        </div>
+        <span class="note">Или напишите - "На усмотрение дизайнера"</span>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Если бы дизайн был музыкальным жанром, то каким
+          именно?</label>
+        <div class="inputs_list">
+          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Например : рок">
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Укажите примеры понравившихся логотипов или фирменных
+          стилей</label>
+        <div class="inputs_list">
+          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Ссылка">
+          <textarea name="" id="" placeholder="Что именно понравилось?"></textarea>
+          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Ссылка">
+          <textarea name="" id="" placeholder="Что именно понравилось?"></textarea>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label for="company_name" class="brief_question__title">Укажите примеры непонравившихся логотипов или фирменных
+          стилей</label>
+        <div class="inputs_list">
+          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Ссылка">
+          <textarea name="" id="" placeholder="Что именно не понравилось?"></textarea>
+          <input type="text" id="company_name" name="company_name" class="w-100" placeholder="Ссылка">
+          <textarea name="" id="" placeholder="Что именно не понравилось?"></textarea>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label class="brief_question__title">Разработка айдентики</label>
+        <span class="red_note">Базовые носители</span>
+        <div class="inputs_list">
+          <label for="card" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="card" value="">
+            <span class="checkbox_item__title">Визитка</span>
+          </label>
+          <label for="Folder" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="Folder" value="">
+            <span class="checkbox_item__title">Папка</span>
+          </label>
+          <label for="Letterhead" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="Letterhead" value="">
+            <span class="checkbox_item__title">Бланк</span>
+          </label>
+          <label for="Envelope" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="Envelope" value="">
+            <span class="checkbox_item__title">Конверт</span>
+          </label>
+          <label for="guideline" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="guideline" value="">
+            <span class="checkbox_item__title">Брендбук / Гайдлайн</span>
+          </label>
+          <textarea name="" id="" class="p-30" placeholder="Укажите свое"></textarea>
+          <label for="consultation" class="checkbox_item">
+            <input type="radio" name="consultation" id="consultation" value="">
+            <span class="checkbox_item__title red">Нужна консультация</span>
+          </label>
+        </div>
+      </div>
+      <!--
+      <div class="brief_question">
+        <label class="brief_question__title">Требуется ли разработка рекламных материалов?</label>
+        <span class="note mb">Если нет, то просто пропустите данный пункт</span>
+        <div class="inputs_list">
+          <label for="Banner" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="Banner" value="">
+            <span class="checkbox_item__title">Banner</span>
+          </label>
+          <label for="Leaflet" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="Leaflet" value="">
+            <span class="checkbox_item__title">Leaflet</span>
+          </label>
+          <label for="Billboard" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="Billboard" value="">
+            <span class="checkbox_item__title">Billboard</span>
+          </label>
+          <label for="Poster" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="Poster" value="">
+            <span class="checkbox_item__title">Poster</span>
+          </label>
+          <label for="advertising" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="advertising" value="">
+            <span class="checkbox_item__title">Online advertising</span>
+          </label>
+          <textarea name="" id="" class="p-30" placeholder="Specify something else"></textarea>
+        </div>
+      </div>
+      -->
+      <div class="brief_question">
+        <label class="brief_question__title">Требуется ли разработка упаковки?</label>
+        <div class="inputs_list">
+          <label for="packaging_development_yes" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="packaging_development_yes" value="">
+            <span class="checkbox_item__title">Да</span>
+          </label>
+          <label for="packaging_development_no" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="packaging_development_no" value="">
+            <span class="checkbox_item__title">Нет</span>
+          </label>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label class="brief_question__title">Требуется ли дизайн сайта или лендинга?</label>
+        <div class="inputs_list">
+          <label for="site_yes" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="site_yes" value="">
+            <span class="checkbox_item__title">Да</span>
+          </label>
+          <label for="site_no" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="site_no" value="">
+            <span class="checkbox_item__title">Нет</span>
+          </label>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label class="brief_question__title">Укажите, для чего ещё нужно сделать дизайн</label>
+        <div class="inputs_list">
+          <textarea name="" id=""
+            placeholder="Например : оформление социальных сетей, стикеры, ценники, мерч, и т.д."></textarea>
+        </div>
+      </div>
+      <div class="red_line"></div>
+      <div class="brief_question">
+        <label class="brief_question__title">Укажите другие ваши пожелания, или то, что нам следует знать</label>
+        <div class="inputs_list">
+          <textarea name="" id="" placeholder="Ваши пожелания, или другая информация"></textarea>
+        </div>
+      </div>
+      <div class="brief_question">
+        <label class="brief_question__title">Бюджет</label>
+        <div class="inputs_list">
+          <label for="one_two" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="one_two" value="">
+            <span class="checkbox_item__title">1-2$</span>
+          </label>
+          <label for="two_three" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="two_three" value="">
+            <span class="checkbox_item__title">2-3$</span>
+          </label>
+          <label for="three_four" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="three_four" value="">
+            <span class="checkbox_item__title">3-4$</span>
+          </label>
+          <label for="over_four" class="checkbox_item">
+            <input type="radio" name="structure_logo" id="over_four" value="">
+            <span class="checkbox_item__title">Свыше 4$</span>
+          </label>
+        </div>
+      </div>
+      <div class="red_line mb"></div>
+      <p class="message">
+        Вся указанная контактная информация служит исключительно для связи с клиентом во время работы над проектом. Она
+        не будет использована для рассылки спама и не будет передана третьим лицам.
+      </p>
+      <button type="submit" class="submit_btn">Отправить</button>
+    </form>
 
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

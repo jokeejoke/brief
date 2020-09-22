@@ -272,3 +272,11 @@ p.message{
 .modal_window .ok:active{
   outline: none;
 }
+@media only screen and (max-width: 576px){
+  input.w-46, input.w-30, input.w-62 {
+    flex: 0 0 100%;
+  }
+  .ml-10{
+    margin-left: 0;
+  }
+}
